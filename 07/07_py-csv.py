@@ -21,16 +21,16 @@ THE BIG BAD PLAN
 import random
 
 # Read in CSV file 
-storage = open('occupations.csv','r')
+storage = open('occupations.csv', 'r')
 words = storage.readlines()
 
 # building dictionary from CSV file
 occupation = {}
 i = 1
 while i < len(words)-1:       # exclude first and last line
-    str = words[i].strip()    # takes off \n
-    if str[0] == '"': #we noticed that there's some titles with commas in 'em so we made this whole section to fix that
-        content = str.split('"')
+    s = words[i].strip()    # takes off \n
+    if s[0] == '"': #we noticed that there's some titles with commas in 'em so we made this whole section to fix that
+        content = s.split('"')
         content.pop(0) #gets rid of emptyboi
         # getting the percentage
         percentage = content[1]
@@ -38,7 +38,7 @@ while i < len(words)-1:       # exclude first and last line
         content.pop(1) # gets rid of comma in front of percentage
         content.append(percentage) # add to list with corresponding job
     else: #if we have no issues with commas then only split by comma
-        content = str.split(",")
+        content = s.split(",")
     num = float(content[1])
     num*=10
     occupation[content[0]] = num #moves the occupation and percentage pairs into the dictionary
