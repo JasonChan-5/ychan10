@@ -1,0 +1,16 @@
+Team Glasses - William Li, Benjamin Gallai, Jason Chan
+SoftDev
+K09 -- Introduction to Flask
+2020-10-09
+
+Q0) Similar to java (int x = int("9"))
+Q1) maybe this is a file path? if so this would be the current directory
+Q2) Prints to terminal/command prompt
+Q3) Prints __name__, whatever it is
+Q4) no, because hello_world isn't run in this code
+Q5) java, dot operator 
+
+__name__ wasn't print because hello_world was never executed
+
+I am more confused than ever, is flask a server?
+Why is it "lazy loading"?
