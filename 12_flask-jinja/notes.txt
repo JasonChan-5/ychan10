@@ -1,0 +1,14 @@
+0) when you try to run app.py, it would give an error
+
+1) William saids http://127.0.0.1:5000/templates/model_tmplt.html
+   Benjamin saids http://127.0.0.1:5000/my_foist_template/templates/model_tmplt.html
+   I said http://127.0.0.1:5000/my_foist_template
+
+2) the arguments would get passed into model_tmplt.html to be used by jinja formatting
+
+for 1 i was right
+
+for 0, if render_template was removed, the localhost website would still run, but trying to access
+the model template website would give an error
+
+unless it is in a static folder, we have to use app.route() to specify the url

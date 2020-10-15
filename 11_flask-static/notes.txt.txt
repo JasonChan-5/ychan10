@@ -1,0 +1,4 @@
+static folder is in the same directory as app.py
+we can access everything in the static folder by changing the address
+if foo is a plain text file, including the .txt will let me see what is inside, without it would
+download a filepath instead
