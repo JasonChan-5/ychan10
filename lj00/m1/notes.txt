@@ -1,0 +1,10 @@
+database - structure way to store data
+nosql database - not in rolls and columns
+mongodb databse stores data as documents
+those documents are stored as collections
+a document in this case is is a set of field value pairs, kinda like dictionaries
+atlas is a fully managed data base with mongodb at its core
+clusters are servers that store data 
+replica set-basically backups
+single clusters are configured as a replica set
+free cluster 3 server replica set and 512 mb storage

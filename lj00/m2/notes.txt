@@ -1,0 +1,28 @@
+JSON files javascript standard object notation
+formatted start and end with curly braces
+separate key and value with colon
+separate key value pair with comma
+keys must be surrounded by ""
+keys are also fields
+JSON is friendly readable familiar, but text based, space consuming, limited
+BSON is Binary JSON
+bridges the gap between representation and JSON, for speed, soace and flexibility high performance
+both has UFT-8 encoding, basic data support
+stores data in BSON, internally and over network, but can store and retrieve JSON
+export in BSON unless u need to be able to read it later, otherwise JSON
+mongodump --uri "<Atlas Cluster URI>"
+exports in BSON
+mongoexport --uri "<atlas cluster uri>"
+            --collection="<collection name>"
+	    --out=<filename>.json
+exports in JSON
+URI is Uniform Resource Identifier
+srv establishes secure connection
+mongorestore --uri
+             --drop dump
+imports data in BSON dump
+mongoimport --uri
+	    --drop=<filename>.json
+imports in JSON
+db.trips.find({"birth year": 1961, "start station name": Howard St & Centre St})
+mongo "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.o9gag.mongodb.net/admin"
