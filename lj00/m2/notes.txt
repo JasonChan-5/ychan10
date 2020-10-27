@@ -25,4 +25,3 @@ mongoimport --uri
 	    --drop=<filename>.json
 imports in JSON
 db.trips.find({"birth year": 1961, "start station name": Howard St & Centre St})
-mongo "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.o9gag.mongodb.net/admin"
