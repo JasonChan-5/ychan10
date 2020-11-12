@@ -1,0 +1,23 @@
+To insert a document, click "insert document"
+you can then make a new document by addinng in key value pairs
+Every document must have a "_id" field and have a unique value
+you can change the value for _id
+object data type creates a sub document
+findOne() - random document
+.insert({document}) - inserts a document
+default order of inserting is in order of listed in the command
+can change that by adding {"ordered": false}
+can automatically create collections and databases
+updateOne()
+only updates one document
+updateMany()
+updates all documents that match a query
+"$inc" command that updates the value of a field by adding a certain amount to the pre-existing value
+"$set" sets the value of a field, can create a new field if specified field does not exist
+"$push" adds an element to array field
+deleteOne()
+deleteMany()
+similar to updateOne and updateMany
+the only time when delete one is a good idea is when deleting using _id 
+.drop() deletes a collection db.[collection name].drop()
+db.zips.updateMany({"city": "Albany"}, {"capital?": "True"})

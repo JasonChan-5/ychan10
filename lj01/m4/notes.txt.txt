@@ -1,0 +1,27 @@
+query operators provide additional ways to locate data within the database
+$eq - equal to
+$neq - not equal
+$gt - greater than
+$gte - greater than or equal
+$lt - less than
+$lte - less than or equal
+{<field>: { <operator>: <value>}}
+$and - all specified query clauses
+$or - at least one
+$nor - fail to match both
+$not - negates query requirement
+$or $nor have similar syntax. {<operator> : [{statement1}, {statement2},...]}
+$not {$not: {statement}}
+$and is present in the query by default
+should only use it when including the same operator more than once in a query
+$expr {$expr: {<expression>}} allows use of aggregation expressions, variables, and conditionals
+example: {"$expr" : {"$eq": ["$start station name", "$end station name"]}}
+$push - add an element to an array or turns a field into an array field if not already an array
+order matters when searching through array fields
+$all will bypass the order
+$size : int - limits the results to specifically that link
+projections specify which fields are shown
+1 includes the field, 0 excludes, do not use both except when excluding _id field
+$elemMatch displays only the documents that match the given conditions
+dot notation - dot separates sub documents, like file path using /
+
